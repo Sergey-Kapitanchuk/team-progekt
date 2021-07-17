@@ -7,6 +7,10 @@
   background-color: tomato;
 }
 
+.section {
+  padding-top: 90px;
+}
+
 .galleri {
   color: aqua;
   font-size: 36px;
