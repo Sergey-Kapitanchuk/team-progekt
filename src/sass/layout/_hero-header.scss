@@ -1,17 +1,12 @@
-.hero {
-  padding-top: 6px;
-  background: $hero-back-color;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 37px;
-  }
-}
-
+// стили header
 .header {
-  font-family: 'DM Sans';
-  font-style: normal;
   display: flex;
   align-items: center;
+  margin-bottom: 137px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 
 .navigation {
@@ -19,22 +14,14 @@
   display: flex;
 
   @media screen and (min-width: 1200px) {
-    position: relative;
     align-items: center;
-    // padding-left: 255px;
   }
 }
 
 .logo {
   margin-right: auto;
-  //   @media screen and (max-width: 1199.98px) {
-  //     margin-right: auto;
-  //   }
 
   @media screen and (min-width: 1200px) {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
     margin-left: -69px;
   }
 
@@ -88,7 +75,8 @@
   font-size: 16px;
   line-height: 1.313;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $button-and-heading-color;
   }
 }
@@ -106,7 +94,8 @@
   border: none;
   border-radius: 22px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $button-hover-two;
   }
 
@@ -120,3 +109,142 @@
   margin-left: 12px;
   fill: transparent;
 }
+// стили header
+
+// стили hero
+.hero {
+  font-family: 'DM Sans';
+  font-style: normal;
+
+  padding-top: 6px;
+  background: $hero-back-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.hero__title {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 19px;
+  font-family: 'Titan One';
+  color: $white-color;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.154;
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.136;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 84px;
+    margin-bottom: 25px;
+    font-size: 38px;
+    line-height: 1.158;
+  }
+}
+
+.hero__text {
+  display: block;
+  color: $button-and-heading-color;
+  font-size: 48px;
+  line-height: 0.958;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.912;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 0.897;
+  }
+}
+
+.pos-list {
+  display: none;
+  text-align: right;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.pos-list__item {
+  @media screen and (max-width: 1199.98px) {
+    margin-right: 10px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.pos-list__quantity {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  color: $button-and-heading-color;
+  font-family: 'Titan One';
+  font-size: 28px;
+  line-height: 1.143;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 2px;
+    font-size: 46px;
+    line-height: 1.152;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    right: -10px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: $white-color;
+    border-radius: 50%;
+
+    @media screen and (min-width: 1200px) {
+      top: -4px;
+      right: -18px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.pos-list__content {
+  margin: 0;
+  color: $white-color;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.286;
+  }
+}
+// стили hero
