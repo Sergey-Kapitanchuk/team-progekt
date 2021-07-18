@@ -1,0 +1,148 @@
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.contacts{
+    background: $primary-background-color;
+    
+}
+
+
+.contacts__card{
+    
+width: 220px;
+height: 427px;
+
+background: $white-color;
+box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+border-radius: 24px;
+
+margin-bottom: 54px;
+}
+
+.contacts__text{
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 43px 21px 43px 20px;
+}
+
+.contacts__name{
+    
+    
+    width: 80px;
+    height: 16px;
+    
+    text-align: center;
+    color: $white-color;
+    background: $heading-back-color-contacts-one;
+    border-radius: 4px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.contacts_city{
+    
+    line-height: 186%;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.contacts_city__text{
+    
+    line-height: 18px;
+
+    color: $primary-text-color;
+
+    margin-top: 0;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 25px;
+}
+.contacts_city__day{
+    margin: 0;
+    line-height: 186%;
+}
+
+.contacts_city__time{
+    margin: 0;
+    line-height: 186%;
+    color: $text-color;
+    margin-bottom: 10px;
+}
+
+.contacts_city__time-output{
+    margin: 0;
+    line-height: 186%;
+    color: $text-color;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 25px;
+    
+}
+
+.contacts_city__tell{
+    line-height: 18px;
+    color: $primary-text-color;
+}
+.contacts_city__mail{
+    line-height: 18px;
+    color: $primary-text-color;
+}
+
+
+
+.button{
+    font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+.contacts_btn__offers{
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    
+    align-items: center;
+    
+    background-color:$button-and-heading-color ;
+    color: $white-color;
+
+    width: 161.45px;
+    height: 44px;
+    border-radius: 22px;
+
+    margin-bottom: 10px;
+}
+
+.contacts_btn__order{
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    
+    align-items: center;
+    
+    background-color:$white-color ;
+    color: $button-and-heading-color;
+
+    width: 161.45px;
+    height: 44px;
+    border-radius: 22px;
+
+    margin-bottom: 10px;
+}
