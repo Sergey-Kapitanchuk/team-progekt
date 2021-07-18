@@ -1,3 +1,44 @@
 .galleri__title{
-    visibility: hidden;
+    display: none;
+}
+.galleri{
+    width: 100%;
+    padding-bottom: 80px;  
+    background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;     
+     background: linear-gradient(
+         to bottom,
+        $primary-background-color 25%,
+        $white-color 25%,
+        $white-color 50%);  
+        
+        @media screen and (min-width: 768px){
+            padding-bottom: 121px;
+            background: linear-gradient(
+                to bottom,
+               $primary-background-color 28%,
+               $white-color 22%,
+               $white-color 50%); 
+         }
+        @media screen and (min-width: 1200px){
+            padding-bottom: 123px;
+            background: linear-gradient(
+                to bottom,
+               $primary-background-color 30%,
+               $white-color 20%,
+               $white-color 50%); 
+         }      
+                      
+}
+.galleri__img{
+    align-items: center;
+    width: 320px;
+    @media screen and (min-width: 768px){
+        width: 748px;
+    }
+    @media screen and (min-width: 1200px){
+        width: 1060px;
+
+    }
 }
