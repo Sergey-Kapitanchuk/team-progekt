@@ -1,3 +1,7 @@
+.container--position {
+  position: relative;
+}
+
 // стили header
 .header {
   display: flex;
@@ -93,6 +97,7 @@
   line-height: 1.313;
   border: none;
   border-radius: 22px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -117,10 +122,16 @@
   font-style: normal;
 
   padding-top: 6px;
+  padding-bottom: 160px;
   background: $hero-back-color;
 
   @media screen and (min-width: 768px) {
     padding-top: 37px;
+    padding-bottom: 34px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 56px;
   }
 }
 
@@ -245,6 +256,130 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.286;
+  }
+}
+
+.anchor-list {
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 66px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 112px;
+  }
+}
+
+.anchor-list__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.anchor-list__button {
+  padding: 7px 14.5px;
+  color: $white-color;
+  background-color: $button-and-heading-color;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+  border-radius: 20px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 11px 21.9px;
+    font-size: 14px;
+    line-height: 1.286;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover;
+  }
+
+  &--look {
+    padding: 7px 13.5px;
+    color: $button-and-heading-color;
+    background-color: $white-color;
+
+    @media screen and (min-width: 1200px) {
+      padding: 11px 20.3px;
+      font-size: 14px;
+      line-height: 1.286;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $button-hover-two;
+    }
+  }
+}
+
+.hero__milk-image {
+  position: absolute;
+  left: 10px;
+  bottom: -6px;
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: -23px;
+    bottom: -11px;
+  }
+}
+
+.content-wrapper {
+  display: none;
+  margin-left: 120px;
+  width: 114px;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 180px;
+    width: 200px;
+  }
+}
+
+.hero__content {
+  margin: 0 0 7px 0;
+  color: $white-color;
+  font-size: 8px;
+  line-height: 1.5;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    line-height: 1.429;
+  }
+}
+
+.transition-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  background-color: $white-color;
+  border-radius: 50%;
+
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+  }
+
+  &__icon {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
 // стили hero
