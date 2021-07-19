@@ -6,11 +6,15 @@
 // стили header
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 137px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 0px;
+    margin-bottom: 9px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 73px;
   }
 }
 
@@ -37,9 +41,6 @@
 }
 
 .menu-toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -88,9 +89,9 @@
 
 .navigation__button {
   display: none;
+  margin-top: 1px;
   min-width: 160px;
-  height: 44px;
-  padding: 0 23px 0 37px;
+  padding: 11.5px 37px;
   background-color: $white-color;
   color: $primaryColor;
   font-weight: 700;
@@ -107,13 +108,14 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: baseline;
   }
 }
 
 .button__icon {
   margin-left: 12px;
-  fill: transparent;
+  fill: none;
 }
 // стили header
 
@@ -155,14 +157,13 @@
   letter-spacing: 0.04em;
 
   @media screen and (min-width: 768px) {
-    margin-top: 15px;
     margin-bottom: 20px;
     font-size: 22px;
     line-height: 1.136;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 84px;
+    // margin-top: 84px;
     margin-bottom: 25px;
     font-size: 38px;
     line-height: 1.158;
@@ -368,7 +369,7 @@
     height: auto;
   }
 }
-// позиционирование изодражений
+// позиционирование изображений
 .hero__milk-image {
   position: absolute;
   left: 10px;
@@ -384,6 +385,22 @@
   }
 }
 
+// hero__icecream-image-wrapper {
+//   position: relative;
+//   left: 107px;
+//   bottom: -160px;
+//   &::after {
+//     content: '';
+//     position: relative;
+//     left: 107px;
+//     bottom: -160px;
+//     z-index: 1;
+//     width: 346px;
+//     height: 344px;
+//     display: inline-block;
+//     background-color: $text-color;
+//   }
+
 .hero__icecream-image {
   position: absolute;
   z-index: 2;
@@ -391,7 +408,7 @@
   bottom: -160px;
 
   @media screen and (min-width: 768px) {
-    left: 334px;
+    left: 354px;
     bottom: -34px;
   }
 
@@ -400,5 +417,5 @@
     bottom: -56px;
   }
 }
-// позиционирование изодражений
+// позиционирование изображений
 // стили hero
