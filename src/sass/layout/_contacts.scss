@@ -14,21 +14,13 @@
 }
 
 
+
 .contacts__card{
-    
-width: 220px;
-height: 427px;
-
-background: $white-color;
-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-border-radius: 24px;
-
-
-margin-inline: auto;
-}
-
-.contacts__card:not(:last-child){
-    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        max-width: 720px;
+        display: flex;
+        
+      }
 }
 
 .contacts__text{
@@ -37,7 +29,32 @@ margin-inline: auto;
     font-weight: 500;
     font-size: 12px;
     padding: 43px 21px 43px 20px;
+    width: 220px;
+height: 427px;
+
+background: $white-color;
+box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+border-radius: 24px;
+
+
+margin-inline: auto;
+@media screen and (min-width: 768px) {
+    max-width: 720px;
+    height: 544px;
 }
+}
+
+.contacts__text:not(:last-child){
+    @media screen and (max-width: 767px){
+        margin-bottom: 20px;
+
+    }
+    @media screen and (min-width: 768px){
+        margin-right: 20px;
+    }
+}
+
+
 
 
 
@@ -128,6 +145,21 @@ margin-inline: auto;
   cursor: pointer;
 }
 
+.contacts__btn{
+    margin-top: 54px;
+    text-align: center;
+    
+}
+
+.contacts__btn{
+    @media screen and (min-width: 768px) {
+        max-width: 720px;
+        display: flex;
+        
+        
+      }
+}
+
 .contacts_btn__offers{
     font-family: DM Sans;
     font-style: normal;
@@ -180,8 +212,3 @@ background-color: $white-color;
 
 
 
-.contacts__btn{
-    margin-top: 54px;
-    text-align: center;
-    
-}
