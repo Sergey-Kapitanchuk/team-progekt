@@ -1,5 +1,6 @@
 .container--position {
   position: relative;
+  z-index: 10;
 }
 
 // стили header
@@ -319,21 +320,6 @@
   }
 }
 
-.hero__milk-image {
-  position: absolute;
-  left: 10px;
-  bottom: -6px;
-
-  @media screen and (max-width: 767.98px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 1200px) {
-    left: -23px;
-    bottom: -11px;
-  }
-}
-
 .content-wrapper {
   display: none;
   margin-left: 120px;
@@ -382,4 +368,37 @@
     height: auto;
   }
 }
+// позиционирование изодражений
+.hero__milk-image {
+  position: absolute;
+  left: 10px;
+  bottom: -6px;
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: -23px;
+    bottom: -11px;
+  }
+}
+
+.hero__icecream-image {
+  position: absolute;
+  z-index: 2;
+  left: 107px;
+  bottom: -160px;
+
+  @media screen and (min-width: 768px) {
+    left: 334px;
+    bottom: -34px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 494px;
+    bottom: -56px;
+  }
+}
+// позиционирование изодражений
 // стили hero
