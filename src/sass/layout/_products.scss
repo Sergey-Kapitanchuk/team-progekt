@@ -4,19 +4,28 @@
 }
 
 .products_container {
-  width: 320px;
+  max-width: 300px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-right: 34px;
-    padding-left: 34px;
+    max-width: 720px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1080px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.title_box {
+  width: 200px;
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    width: 283px;
   }
   @media screen and (min-width: 1280px) {
-    width: 1280px;
-    padding-left: 115px;
-    padding-right: 115px;
+    width: 350px;
   }
 }
 
@@ -49,13 +58,13 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    max-width: 700px;
+    width: 700px;
     display: flex;
     justify-content: center;
   }
 
   @media screen and (min-width: 1280px) {
-    min-width: 1054px;
+    width: 1054px;
     display: flex;
     justify-content: center;
   }
@@ -128,7 +137,7 @@
   border-radius: 24px;
 
   @media screen and (max-width: 767px) {
-    padding-top: 161px;
+    padding-top: 165px;
     padding-bottom: 40px;
     height: 485px;
     width: 280px;
@@ -168,12 +177,13 @@
   line-height: 23px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: $white-color;
   position: relative;
+  margin-top: 0px;
 
   &::after {
-    content: '...';
+    content: '';
+    border: 1px solid tomato;
     position: absolute;
     width: 26px;
     height: 6px;
@@ -184,13 +194,13 @@
     text-align: center;
     // background-image: url('');
   }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    padding-bottom: 33px;
+  @media screen and (max-width: 767px) {
     margin-bottom: 30px;
+    padding-bottom: 30px;
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-bottom: 33px;
     margin-bottom: 30px;
+    padding-bottom: 30px;
   }
   @media screen and (min-width: 1280px) {
     padding-bottom: 36px;
