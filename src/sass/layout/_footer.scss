@@ -6,8 +6,12 @@
 
 .footer_titer{
     width: 234px;
-height: 135px;
-margin-bottom: 43px;
+    height: 135px;
+    margin-bottom: 43px;
+@media screen and (min-width: 768px){
+    width: 340px;
+    height: 183px;
+}
 
 }
 
@@ -19,6 +23,11 @@ font-weight: normal;
 font-size: 18px;
 line-height: 21px;
 color: $text-color;
+
+@media screen and (min-width: 768px){
+    font-size: 26px;
+    line-height: 30px;
+}
 }
 
 .footer_titer__text{
@@ -30,7 +39,14 @@ line-height: 39px;
 letter-spacing: 0.04em;
 color: $button-and-heading-color;
 
+@media screen and (min-width: 768px){
+    font-size: 48px;
+    line-height: 55px;
 }
+
+}
+
+
 
 .footer_social_list__icon{
     color: $heading-back-color-contacts-three;
@@ -44,6 +60,10 @@ color: $button-and-heading-color;
 .footer_social:hover,
 .footer_social:focus{
 color: $button-hover;
+}
+
+.footer_titer__icon{
+    display: flex;
 }
 
 .footer_social{

@@ -21,6 +21,9 @@
         display: flex;
         
       }
+      @media screen and (min-width: 1200px){
+          margin: auto;
+      }
 }
 
 .contacts__text{
@@ -30,17 +33,25 @@
     font-size: 12px;
     padding: 43px 21px 43px 20px;
     width: 220px;
-height: 427px;
+    height: 427px;
 
-background: $white-color;
-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-border-radius: 24px;
+    background: $white-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
 
 
 margin-inline: auto;
 @media screen and (min-width: 768px) {
+    
     max-width: 720px;
     height: 544px;
+    padding: 50px 32px 50px 31px;
+}
+    @media screen and (min-width: 1200px) {
+        max-width: 1080px;
+        width: 330px;
+        height: 572px;
+        padding: 51px 44px 62px 43px;
 }
 }
 
@@ -51,7 +62,12 @@ margin-inline: auto;
     }
     @media screen and (min-width: 768px){
         margin-right: 20px;
+        
     }
+    @media screen and (min-width: 1200px){
+        margin-right: 31px;
+    }
+    
 }
 
 
@@ -69,7 +85,18 @@ margin-inline: auto;
     background: $heading-back-color-contacts-one;
     border-radius: 4px;
     margin-top: 0;
-    margin-bottom: 25px;
+    
+    @media screen and (max-width: 767px){
+        
+        margin-bottom: 25px;
+    }
+    @media screen and (min-width: 768px){
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px){
+        margin-bottom: 32px;
+    }
 }
 
 .contacts__name_text{
@@ -81,7 +108,17 @@ margin-inline: auto;
     background: $heading-back-color-contacts-two;
     border-radius: 4px;
     margin-top: 0;
-    margin-bottom: 25px;
+    
+    @media screen and (max-width: 767px){
+        margin-bottom: 25px;
+    }
+    @media screen and (min-width: 768px){
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px){
+        margin-bottom: 32px;
+    }
 }
 
 .contacts_city{
@@ -90,6 +127,14 @@ margin-inline: auto;
 
     margin-top: 0;
     margin-bottom: 10px;
+    @media screen and (min-width: 768px){
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
 }
 
 .contacts_city__text{
@@ -102,10 +147,26 @@ margin-inline: auto;
     padding-bottom: 25px;
     border-bottom: 1px solid #E1E1E1;
     margin-bottom: 25px;
+    @media screen and (min-width: 768px){
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 16px;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+    }
 }
 .contacts_city__day{
     margin: 0;
     line-height: 186%;
+    @media screen and (min-width: 768px){
+        font-size: 14px;
+        
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 16px;
+    }
 }
 
 .contacts_city__time{
@@ -113,6 +174,14 @@ margin-inline: auto;
     line-height: 186%;
     color: $text-color;
     margin-bottom: 10px;
+    @media screen and (min-width: 768px){
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
 }
 
 .contacts_city__time-output{
@@ -122,14 +191,36 @@ margin-inline: auto;
     padding-bottom: 25px;
     border-bottom: 1px solid #E1E1E1;
     margin-bottom: 25px;
+    @media screen and (min-width: 768px){
+        font-size: 14px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 16px;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+    }
     
 }
 
 .contacts_city__tell{
     line-height: 18px;
     color: $primary-text-color;
+    @media screen and (min-width: 768px){
+        font-size: 14px;
+    @media screen and (min-width: 1200px){
+        font-size: 16px;
+    }
+    }
 }
 .contacts_city__mail{
+    @media screen and (min-width: 768px){
+        font-size: 14px;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 16px;
+    }
     line-height: 18px;
     color: $primary-text-color;
 }
@@ -148,6 +239,9 @@ margin-inline: auto;
 .contacts__btn{
     margin-top: 54px;
     text-align: center;
+    @media screen and (min-width: 768px){
+        margin-top: 81px;
+    }
     
 }
 
@@ -158,6 +252,12 @@ margin-inline: auto;
         
         
       }
+}
+
+.contacts__btn_item{
+    @media screen and (min-width: 768px){
+        padding-right: 14.5px;
+    }
 }
 
 .contacts_btn__offers{
@@ -177,6 +277,10 @@ margin-inline: auto;
     border-radius: 22px;
 
     margin-bottom: 10px;
+    @media screen and (min-width: 768px){
+        width: 191.45px;
+        
+    }
 }
 
 .contacts_btn__order{
