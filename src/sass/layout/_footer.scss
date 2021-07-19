@@ -1,5 +1,7 @@
 .footer{
     background-color: $primary-background-color;
+    position: relative;
+    padding-bottom: 43px;
     
 
 }        
@@ -57,13 +59,16 @@ color: $button-and-heading-color;
     
 }
 
-.footer_social:hover,
-.footer_social:focus{
-color: $button-hover;
+.footer_social__item:hover,
+.footer_social__item:focus{
+  color: $button-and-heading-color;
 }
 
 .footer_titer__icon{
-    display: flex;
+    @media screen and (min-width: 768px){
+        display: flex;
+
+    }
 }
 
 .footer_social{
@@ -82,10 +87,7 @@ color: $button-hover;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
-
-padding-bottom: 47px;
-border-bottom: 1px solid #E1E1E1;
-margin-bottom: 65px;
+margin-bottom: 112px;
 
 }
 
@@ -94,8 +96,16 @@ margin-bottom: 65px;
 }
 
 .footer_social__copy_text{
+    bottom: 0px;
+    border-top: 1px solid #E1E1E1;;
+    position: absolute;
+    width: 100%;
+    padding-top: 22px;
+    margin: 0 auto;
+    left: 0;
     text-align: center;
     padding-bottom: 25px;
+
 }
 
 .footer_social__copy{
