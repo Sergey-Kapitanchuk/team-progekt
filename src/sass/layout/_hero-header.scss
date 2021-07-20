@@ -135,6 +135,7 @@
 
 .button__icon {
   margin-left: 12px;
+  stroke: $primaryColor;
   fill: none;
 }
 // стили header
@@ -338,6 +339,10 @@
   margin-left: 120px;
   width: 114px;
 
+  animation-name: FromLeft;
+  animation-duration: 400ms;
+  animation-timing-function: linear;
+
   @media screen and (min-width: 768px) {
     display: inline-block;
   }
@@ -370,6 +375,12 @@
   background-color: $white-color;
   border-radius: 50%;
 
+  animation-name: scale;
+  animation-delay: 400ms;
+  animation-duration: 650ms;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+
   @media screen and (min-width: 1200px) {
     width: 26px;
     height: 26px;
@@ -377,7 +388,8 @@
 
   &__icon {
     display: block;
-    width: 100%;
+    fill: $primaryColor;
+    width: 35%;
     height: auto;
   }
 }
@@ -459,7 +471,7 @@
   bottom: 0;
 
   animation-name: FromRight;
-  animation-duration: 600ms;
+  animation-duration: 400ms;
   animation-timing-function: linear;
 
   @media screen and (max-width: 767.98px) {
