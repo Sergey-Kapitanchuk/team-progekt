@@ -1,5 +1,6 @@
 .hero-container {
   position: relative;
+  // z-index: 1;
   max-width: 280px;
   margin: 0 auto;
   padding-top: 6px;
@@ -140,21 +141,8 @@
 
 // стили hero
 .hero {
-  font-family: 'DM Sans';
-  font-style: normal;
-
-  // padding-top: 6px;
-  // padding-bottom: 160px;
   background: $hero-back-color;
-
-  // @media screen and (min-width: 768px) {
-  //   padding-top: 37px;
-  //   padding-bottom: 34px;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   padding-bottom: 56px;
-  // }
+  overflow: hidden;
 }
 
 .flex-container {
@@ -182,7 +170,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    // margin-top: 84px;
     margin-bottom: 25px;
     font-size: 38px;
     line-height: 1.158;
@@ -257,6 +244,12 @@
     height: 16px;
     background-color: $white-color;
     border-radius: 50%;
+
+    animation-name: scale;
+    animation-delay: 400ms;
+    animation-duration: 650ms;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
 
     @media screen and (min-width: 1200px) {
       top: -4px;
@@ -394,6 +387,10 @@
   left: 0px;
   bottom: 28px;
 
+  animation-name: FromLeft;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+
   @media screen and (max-width: 767.98px) {
     display: none;
   }
@@ -410,6 +407,10 @@
   left: 97px;
   bottom: 0px;
 
+  animation-name: DownToUp;
+  animation-duration: 400ms;
+  animation-timing-function: linear;
+
   @media screen and (min-width: 768px) {
     left: 344px;
   }
@@ -417,34 +418,103 @@
   @media screen and (min-width: 1200px) {
     left: 479px;
   }
-  // &::after {
-  //   content: '';
-  //   position: relative;
-  //   left: 107px;
-  //   bottom: -160px;
-  //   z-index: 1;
-  //   width: 346px;
-  //   height: 344px;
-  //   display: inline-block;
-  //   background-color: $text-color;
-  // }
+  &::before {
+    content: '';
+    position: absolute;
+    left: -81px;
+    bottom: 75px;
+    z-index: -1;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: $text-color;
+
+    animation-name: scale;
+    animation-delay: 400ms;
+    animation-duration: 650ms;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+
+    @media screen and (min-width: 768px) {
+      width: 324px;
+      height: 322px;
+      left: -71px;
+      bottom: 46px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 538px;
+      height: 538px;
+      left: -119px;
+      bottom: 75px;
+    }
+  }
 }
 
-// .hero__icecream-image {
-//   position: absolute;
-//   z-index: 2;
-//   left: 107px;
-//   bottom: -160px;
+.hero__women-image {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
 
-//   @media screen and (min-width: 768px) {
-//     left: 354px;
-//     bottom: -34px;
-//   }
+  animation-name: FromRight;
+  animation-duration: 600ms;
+  animation-timing-function: linear;
 
-//   @media screen and (min-width: 1200px) {
-//     left: 494px;
-//     bottom: -56px;
-//   }
-// }
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: -6px;
+  }
+}
 // позиционирование изображений
 // стили hero
+
+// анимации
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  70% {
+    transform: scale(120%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+@keyframes FromRight {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes FromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes DownToUp {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+// анимации
