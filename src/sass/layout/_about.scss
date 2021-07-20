@@ -1,0 +1,163 @@
+.about {
+  background-color: $primary-background-color;
+  background-image: url(../images/mobile/milk-background.png);
+  background-repeat: no-repeat;
+  background-size: 320px;
+  background-position: center 766px;
+  padding-top: 125px;
+  padding-bottom: 39px;
+  padding-right: 50px;
+  padding-left: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+    background-image: none;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 125px;
+    padding-bottom: 39px;
+    background-image: url(../images/desktop/milk-background.png);
+    background-position: center 342px;
+    background-size: 1282px;
+  }
+}
+
+.about-text {
+  margin-bottom: 15px;
+  color: $text-color;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.145;
+  text-align: center;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 15px;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about-title {
+  margin-bottom: 26px;
+  color: $primaryColor;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.145;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 55px;
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
+}
+
+.about-body {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about-picture {
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 516px;
+  }
+}
+
+.info-title {
+  margin-top: 46px;
+  margin-bottom: 47px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+    margin-bottom: 49px;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 51px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about-info {
+  @media screen and (min-width: 768px) {
+    margin-left: 17px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 74px;
+  }
+}
+
+.info-text {
+  color: $primary-text-color;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  margin-bottom: 23px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 47px;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 45px;
+    line-height: 1.94;
+  }
+}
+
+.about-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 176px;
+  height: 44px;
+  color: $primaryColor;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.302;
+  border: none;
+  border-radius: 22px;
+  background-color: $white-color;
+  &:hover,
+  &:focus {
+    background-color: $button-hover-two;
+  }
+}
+
+.button-icon {
+  margin-left: 13px;
+  fill: $button-and-heading-color;
+  width: 8px;
+  height: 10px;
+}
