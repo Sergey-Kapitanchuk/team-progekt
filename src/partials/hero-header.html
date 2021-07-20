@@ -1,31 +1,31 @@
 <section class="hero">
-  <div class="container container--position">
-    <header class="header">
-      <nav class="navigation">
-        <a href="/" class="logo"
-          ><img src="./images/logo-ice.png" alt="логотип" class="logo__image"
-        /></a>
-        <button class="menu-toggle">
-          <svg width="20" height="12" class="menu-toggle__icon">
-            <use href="./images/sprite.svg#icon-burger"></use>
+  <div class="hero-container">
+    <div class="positioned-wrapper">
+      <header class="header">
+        <nav class="navigation">
+          <a href="/" class="logo"
+            ><img src="./images/logo-ice.png" alt="логотип" class="logo__image"
+          /></a>
+          <button class="menu-toggle">
+            <svg width="20" height="12" class="menu-toggle__icon">
+              <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <ul class="site-nav">
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Home</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">About us</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">How it’s made?</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Our products</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="navigation__button" type="button">
+          Buy now
+          <svg width="6" height="10" class="button__icon">
+            <use href="./images/sprite.svg#arrow-buy"></use>
           </svg>
         </button>
-        <ul class="site-nav">
-          <li class="site-nav__item"><a href="#" class="site-nav__link">Home</a></li>
-          <li class="site-nav__item"><a href="#" class="site-nav__link">About us</a></li>
-          <li class="site-nav__item"><a href="#" class="site-nav__link">How it’s made?</a></li>
-          <li class="site-nav__item"><a href="#" class="site-nav__link">Our products</a></li>
-          <li class="site-nav__item"><a href="#" class="site-nav__link">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="navigation__button" type="button">
-        Buy now
-        <svg width="6" height="10" class="button__icon">
-          <use href="./images/sprite.svg#arrow-buy"></use>
-        </svg>
-      </button>
-    </header>
-    <div class="container--position">
+      </header>
       <div class="flex-container">
         <h1 class="hero__title">
           ice cream<br />made with
@@ -50,18 +50,19 @@
           <a href="#" class="anchor-list__button anchor-list__button--look">How it’s made?</a>
         </li>
       </ul>
-    </div>
-    <div class="content-wrapper">
-      <p class="hero__content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <a href="#" class="transition-link">
-        <!-- <svg width="16" height="16" class="transition-link__icon">
+      <div class="content-wrapper">
+        <p class="hero__content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <a href="#" class="transition-link">
+          <!-- <svg width="16" height="16" class="transition-link__icon">
           <use href="./images/sprite.svg#icon-arrow-right"></use>
         </svg> -->
-      </a>
+        </a>
+      </div>
     </div>
+
     <picture>
       <source
         srcset="./images/desktop/milk.png 1x, ./images/desktop/milk-2x.png 2x"
@@ -73,21 +74,23 @@
       />
       <img class="hero__milk-image" src="./images/tablet/milk.png" alt="кувшин с молоком" />
     </picture>
-    <picture>
-      <source
-        srcset="./images/mobile/ice.png 1x, ./images/mobile/ice-2x.png 2x"
-        media="(max-width: 767px)"
-      />
-      <source
-        srcset="./images/desktop/ice.png 1x, ./images/desktop/ice-2x.png 2x"
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="./images/tablet/ice.png 1x, ./images/tablet/ice-2x.png 2x"
-        media="(min-width: 768px)"
-      />
-      <img class="hero__icecream-image" src="./images/mobile/ice.png" alt="вкусное мороженое" />
-    </picture>
+    <div class="hero__icecream-image-wrapper">
+      <picture>
+        <source
+          srcset="./images/mobile/ice.png 1x, ./images/mobile/ice-2x.png 2x"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="./images/desktop/ice.png 1x, ./images/desktop/ice-2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="./images/tablet/ice.png 1x, ./images/tablet/ice-2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img class="hero__icecream-image" src="./images/mobile/ice.png" alt="вкусное мороженое" />
+      </picture>
+    </div>
     <!-- <picture>
       <source
         srcset="./images/desktop/women.png 1x, ./images/desktop/women-2x.png 2x"
