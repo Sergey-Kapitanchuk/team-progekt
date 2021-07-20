@@ -1,4 +1,23 @@
-.container--position {
+.hero-container {
+  position: relative;
+  max-width: 280px;
+  margin: 0 auto;
+  padding-top: 6px;
+  padding-bottom: 160px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+    padding-top: 37px;
+    padding-bottom: 34px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1050px;
+    padding-bottom: 56px;
+  }
+}
+
+.positioned-wrapper {
   position: relative;
   z-index: 10;
 }
@@ -124,18 +143,18 @@
   font-family: 'DM Sans';
   font-style: normal;
 
-  padding-top: 6px;
-  padding-bottom: 160px;
+  // padding-top: 6px;
+  // padding-bottom: 160px;
   background: $hero-back-color;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 37px;
-    padding-bottom: 34px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   padding-top: 37px;
+  //   padding-bottom: 34px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 56px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   padding-bottom: 56px;
+  // }
 }
 
 .flex-container {
@@ -202,10 +221,10 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 13px;
+    margin-bottom: 14px;
 
     @media screen and (min-width: 1200px) {
-      margin-bottom: 15px;
+      margin-bottom: 18px;
     }
   }
 }
@@ -372,50 +391,60 @@
 // позиционирование изображений
 .hero__milk-image {
   position: absolute;
-  left: 10px;
-  bottom: -6px;
+  left: 0px;
+  bottom: 28px;
 
   @media screen and (max-width: 767.98px) {
     display: none;
   }
 
   @media screen and (min-width: 1200px) {
-    left: -23px;
-    bottom: -11px;
+    left: -38px;
+    bottom: 45px;
   }
 }
 
-// hero__icecream-image-wrapper {
-//   position: relative;
-//   left: 107px;
-//   bottom: -160px;
-//   &::after {
-//     content: '';
-//     position: relative;
-//     left: 107px;
-//     bottom: -160px;
-//     z-index: 1;
-//     width: 346px;
-//     height: 344px;
-//     display: inline-block;
-//     background-color: $text-color;
-//   }
-
-.hero__icecream-image {
+.hero__icecream-image-wrapper {
   position: absolute;
   z-index: 2;
-  left: 107px;
-  bottom: -160px;
+  left: 97px;
+  bottom: 0px;
 
   @media screen and (min-width: 768px) {
-    left: 354px;
-    bottom: -34px;
+    left: 344px;
   }
 
   @media screen and (min-width: 1200px) {
-    left: 494px;
-    bottom: -56px;
+    left: 479px;
   }
+  // &::after {
+  //   content: '';
+  //   position: relative;
+  //   left: 107px;
+  //   bottom: -160px;
+  //   z-index: 1;
+  //   width: 346px;
+  //   height: 344px;
+  //   display: inline-block;
+  //   background-color: $text-color;
+  // }
 }
+
+// .hero__icecream-image {
+//   position: absolute;
+//   z-index: 2;
+//   left: 107px;
+//   bottom: -160px;
+
+//   @media screen and (min-width: 768px) {
+//     left: 354px;
+//     bottom: -34px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     left: 494px;
+//     bottom: -56px;
+//   }
+// }
 // позиционирование изображений
 // стили hero
