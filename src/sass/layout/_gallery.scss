@@ -6,7 +6,8 @@
     padding-bottom: 80px;  
     background-position: center;
      background-repeat: no-repeat;
-     background-size: cover;     
+     background-size: cover; 
+     background-origin: border-box;    
      background: linear-gradient(
          to bottom,
         $primary-background-color 25%,
@@ -34,7 +35,7 @@
 .galleri__img{
   
     padding-left: 20px;
-   margin: 0 auto;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;  
     @media screen and (min-width: 320px){
