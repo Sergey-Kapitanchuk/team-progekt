@@ -167,9 +167,12 @@
   margin-top: 0px;
 
   &::after {
-    content: '';
-    border: 1px solid tomato;
+    content: '...';
+    // border: 1px solid tomato;
     position: absolute;
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
     width: 26px;
     height: 6px;
     left: 50%;
@@ -240,13 +243,14 @@
   border-style: none;
   padding: 0;
   cursor: pointer;
-  &::after {
-    content: '';
-    // background-image: url('/src/images/arrow-right.svg');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-  }
+  fill: $primaryColor;
+  // &::after {
+  //   content: '';
+  //   // background-image: url('/src/images/arrow-right.svg');
+  //   background-position: 50% 50%;
+  //   background-repeat: no-repeat;
+  //   display: inline-block;
+  //   width: 40px;
+  //   height: 40px;
+  // }
 }
