@@ -6,7 +6,7 @@
           <a href="/" class="logo"
             ><img src="./images/logo-ice.png" alt="логотип" class="logo__image"
           /></a>
-          <button class="menu-toggle">
+          <button class="menu-toggle js-open-menu js-opacity">
             <svg width="20" height="12" class="menu-toggle__icon">
               <use href="./images/sprite.svg#icon-burger"></use>
             </svg>
@@ -19,7 +19,7 @@
             <li class="site-nav__item"><a href="#" class="site-nav__link">Contact</a></li>
           </ul>
         </nav>
-        <button class="navigation__button" type="button">
+        <button class="navigation__button js-opacityA" type="button">
           Buy now
           <svg width="6" height="10" class="button__icon">
             <use href="./images/sprite.svg#arrow-buy"></use>
@@ -56,9 +56,9 @@
           ut labore et
         </p>
         <a href="#" class="transition-link">
-          <!-- <svg width="16" height="16" class="transition-link__icon">
-          <use href="./images/sprite.svg#icon-arrow-right"></use>
-        </svg> -->
+          <svg width="10" height="10" class="transition-link__icon">
+            <use href="./images/sprite.svg#icon-arrow-riht"></use>
+          </svg>
         </a>
       </div>
     </div>
@@ -91,7 +91,7 @@
         <img class="hero__icecream-image" src="./images/mobile/ice.png" alt="вкусное мороженое" />
       </picture>
     </div>
-    <!-- <picture>
+    <picture>
       <source
         srcset="./images/desktop/women.png 1x, ./images/desktop/women-2x.png 2x"
         media="(min-width: 1200px)"
@@ -101,6 +101,40 @@
         media="(min-width: 768px)"
       />
       <img class="hero__women-image" src="./images/tablet/women.png" alt="девушка с мороженым" />
-    </picture> -->
+    </picture>
   </div>
 </section>
+<!-- разметка мобильного меню -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="mob-menu-wrapper">
+    <button class="mob-menu-toggle js-close-menu">
+      <svg width="14" height="14" class="menu-toggle__icon">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <button class="mob__button" type="button">
+      Buy now
+      <svg width="6" height="10" class="button__icon">
+        <use href="./images/sprite.svg#arrow-buy"></use>
+      </svg>
+    </button>
+    <ul class="mob-nav">
+      <li class="mob-nav__item">
+        <a href="#" class="mob-nav__link">Home</a>
+      </li>
+      <li class="mob-nav__item">
+        <a href="#" class="mob-nav__link">About us</a>
+      </li>
+      <li class="mob-nav__item">
+        <a href="#" class="mob-nav__link">How it’s made?</a>
+      </li>
+      <li class="mob-nav__item">
+        <a href="#" class="mob-nav__link">Our products</a>
+      </li>
+      <li class="mob-nav__item">
+        <a href="#" class="mob-nav__link">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- разметка мобильного меню -->
