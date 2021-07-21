@@ -139,12 +139,22 @@
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  &.active {
+    background-color: transparent;
+    border-radius: 0;
+    background-image: url('../images/home.svg');
+  }
 }
-.active,
+
 .slider-dots_item:hover {
   border: none;
-  background-image: url('../images/home.svg');
 }
+
+// .slider-dots_item.active {
+//   background-color: transparent;
+//   border-radius: 0;
+//   background-image: url('../images/home.svg');
+// }
 /* Анимация слайдов */
 .slider .item {
   -webkit-animation-name: fade;
