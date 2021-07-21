@@ -149,6 +149,7 @@
   border: none;
   border-radius: 22px;
   background-color: $white-color;
+  cursor: pointer;
   &:hover,
   &:focus {
     background-color: $button-hover-two;
