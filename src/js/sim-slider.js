@@ -53,7 +53,7 @@ dots[i].className = dots[i].className.replace(" active", "");
 }
 slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " active";
-// setTimeout(autoSlider, 3000); // Измените значения авто прокрутки в миллисекундах (ms), пример 6000 это 6 секунд
+setTimeout(autoSlider, 3000); // Измените значения авто прокрутки в миллисекундах (ms), пример 6000 это 6 секунд
 }
 window.addEventListener("keydown", (e) => {
     console.log(e.code);
