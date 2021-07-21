@@ -9,11 +9,20 @@
     clip: rect(0 0 0 0);
 }
 
+
 .contacts{
     background: linear-gradient(180deg, rgb(255, 255, 255) 5%, rgb(255, 245, 246) 4%);
 }
 
-
+.contacts_bubble{
+    display: none;
+    @media screen and (min-width: 1200px){
+        position: absolute;
+        display: block;
+        
+        width: 100vw;
+    }
+}
 
 .contacts__card{
     @media screen and (min-width: 768px) {
@@ -27,8 +36,7 @@
 }
 
 .contacts__text{
-    font-family: DM Sans;
-    font-style: normal;
+    
     font-weight: 500;
     font-size: 12px;
     padding: 43px 21px 43px 20px;
@@ -80,17 +88,21 @@ margin-inline: auto;
     width: 80px;
     height: 16px;
     align-items: center;
-    text-align: center;
+    
     color: $white-color;
     background: $heading-back-color-contacts-one;
     border-radius: 4px;
     margin-top: 0;
+    display: flex;
+    justify-content: center;
     
     @media screen and (max-width: 767px){
         
         margin-bottom: 25px;
     }
     @media screen and (min-width: 768px){
+        width: 73px;
+        height: 28px;
         font-size: 16px;
         margin-bottom: 30px;
     }
@@ -103,16 +115,19 @@ margin-inline: auto;
     width: 130px;
     height: 16px;
     align-items: center;
-    text-align: center;
+    
     color: $white-color;
     background: $heading-back-color-contacts-two;
     border-radius: 4px;
     margin-top: 0;
-    
+    display: flex;
+    justify-content: center;
     @media screen and (max-width: 767px){
         margin-bottom: 25px;
     }
     @media screen and (min-width: 768px){
+        width: 138px;
+        height: 28px;
         font-size: 16px;
         margin-bottom: 30px;
     }
@@ -139,7 +154,7 @@ margin-inline: auto;
 
 .contacts_city__text{
     
-    line-height: 18px;
+    line-height: 1.5;
 
     color: $primary-text-color;
 
@@ -150,11 +165,13 @@ margin-inline: auto;
     @media screen and (min-width: 768px){
         font-size: 14px;
         margin-bottom: 30px;
+        line-height: 1.66;
     }
     @media screen and (min-width: 1200px){
         font-size: 16px;
         padding-bottom: 32px;
         margin-bottom: 32px;
+        line-height: 1.83;
     }
 }
 .contacts_city__day{
@@ -205,13 +222,14 @@ margin-inline: auto;
 }
 
 .contacts_city__tell{
-    line-height: 18px;
+    line-height: 1.5;
     color: $primary-text-color;
     @media screen and (min-width: 768px){
         font-size: 14px;
+        line-height: 1.83;
+    }
     @media screen and (min-width: 1200px){
         font-size: 16px;
-    }
     }
 }
 .contacts_city__mail{
@@ -262,12 +280,13 @@ margin-inline: auto;
     @media screen and (min-width: 768px){
         padding-right: 14.5px;
     }
-    @media screen and (min-width: 1200px){}
+    @media screen and (min-width: 1200px){
+        padding-right: 15px;
+    }
 }
 
 .contacts_btn__offers{
-    font-family: DM Sans;
-    font-style: normal;
+    
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -289,8 +308,7 @@ margin-inline: auto;
 }
 
 .contacts_btn__order{
-    font-family: DM Sans;
-    font-style: normal;
+    
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -309,14 +327,14 @@ margin-inline: auto;
 
 .contacts_btn__offers:hover,
 .contacts_btn__offers:focus{
-color: $button-and-heading-color;
-background-color: $white-color;
+color: $white-color;
+background-color: $button-hover;
 }
 
 .contacts_btn__order:hover,
 .contacts_btn__order:focus{
-    background-color:$button-and-heading-color ;
-    color: $white-color;
+    background-color:$button-hover-two ;
+    color: $button-and-heading-color;
 }
 
 .contacts_btn__icon_red{
