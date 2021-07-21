@@ -14,6 +14,10 @@
     width: 340px;
     height: 183px;
 }
+@media screen and (min-width: 1200px){
+    width: 474px;
+    height: 115px;
+}
 
 }
 
@@ -30,6 +34,10 @@ color: $text-color;
     font-size: 26px;
     line-height: 30px;
 }
+@media screen and (min-width: 1200px){
+    font-size: 30px;
+line-height: 34px
+}
 }
 
 .footer_titer__text{
@@ -45,8 +53,20 @@ color: $button-and-heading-color;
     font-size: 48px;
     line-height: 55px;
 }
-
+@media screen and (min-width: 1200px){
+    font-size: 58px;
+line-height: 66px;
 }
+}
+
+.footer_social__contacts{
+    
+    text-align: end;
+
+    
+}
+
+
 .footer_social_list__item:not(:last-child){
     margin-right: 30px;
 }
@@ -69,7 +89,12 @@ color: $button-and-heading-color;
 .footer_titer__icon{
     @media screen and (min-width: 768px){
         display: flex;
+        justify-content: space-between;
 
+    }
+    @media screen and (min-width: 1200px){
+        padding-left: 114px;
+        padding-right: 50px;
     }
 }
 
@@ -77,23 +102,23 @@ color: $button-and-heading-color;
 
 .footer_social__list{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding-bottom: 47px;
-    padding-left: 127px;
-    width: 150px;
-    height: 42px;
+    
     
 
 }
 .footer_social__tell{
 
-    font-family: DM Sans;
-font-style: normal;
+    
 font-weight: bold;
 font-size: 12px;
 margin-bottom: 112px;
 @media screen and (min-width: 768px){
     font-size: 14px;
+}
+@media screen and (min-width: 1200px){
+    font-size: 16px;
 }
 
 }
@@ -112,13 +137,16 @@ margin-bottom: 112px;
     left: 0;
     text-align: center;
     padding-bottom: 25px;
+    @media screen and (min-width: 768px){
+        display: flex;
+        justify-content: center;
+    }
 
 }
 
 .footer_social__copy{
     
-    font-family: DM Sans;
-font-style: normal;
+    
 font-weight: bold;
 font-size: 14px;
 text-align: center;
@@ -126,4 +154,13 @@ color: $primary-text-color;
 margin-top: 0%;
 }
 
-
+.footer_social__all{
+    font-weight: bold;
+font-size: 14px;
+text-align: center;
+color: $primary-text-color;
+margin-top: 0%;
+@media screen and (min-width: 768px){
+    padding-left: 3px;
+}
+}
