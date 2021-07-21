@@ -1,6 +1,6 @@
 .hero-container {
   position: relative;
-  // z-index: 1;
+  z-index: 1;
   max-width: 280px;
   margin: 0 auto;
   padding-top: 6px;
@@ -415,7 +415,7 @@
 
 .hero__icecream-image-wrapper {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   left: 97px;
   bottom: 0px;
 
