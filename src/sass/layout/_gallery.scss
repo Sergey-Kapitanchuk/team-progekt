@@ -1,52 +1,50 @@
-.galleri__title{
-    display: none;
+.galleri__title {
+  display: none;
 }
-.galleri{
-    width: 100%;
-    padding-bottom: 80px;  
-    background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover; 
-     background-origin: border-box;    
-     background: linear-gradient(
-         to bottom,
-        $primary-background-color 25%,
-        $white-color 25%,
-        $white-color 50%);  
-        
-        @media screen and (min-width: 768px){
-            padding-bottom: 121px;
-            background: linear-gradient(
-                to bottom,
-               $primary-background-color 28%,
-               $white-color 22%,
-               $white-color 50%); 
-         }
-        @media screen and (min-width: 1200px){
-            padding-bottom: 123px;
-            background: linear-gradient(
-                to bottom,
-               $primary-background-color 31%,
-               $white-color 19%,
-               $white-color 50%); 
-         }      
-                      
-}
-.galleri__img{
-  
-    padding-left: 20px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;  
-    @media screen and (min-width: 320px){
-        margin-left: -20px;
-        padding-left: 0;
-    }
-    @media screen and (min-width: 768px){
-        margin-left: -25px;
-    }
-       @media screen and (min-width: 1200px){
-       margin-left: -95px;
-    }
-}
+.galleri {
+  width: 100%;
+  padding-bottom: 80px;
+  // background-position: center;
+  //  background-repeat: no-repeat;
+  //  background-size: cover;
+  //  background-origin: border-box;
+  background: linear-gradient(
+    to bottom,
+    $primary-background-color 23.5%,
+    $white-color 26.5%,
+    $white-color 50%
+  );
 
+  @media screen and (min-width: 768px) {
+    padding-bottom: 121px;
+    background: linear-gradient(
+      to bottom,
+      $primary-background-color 27.5%,
+      $white-color 22.5%,
+      $white-color 50%
+    );
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 123px;
+    background: linear-gradient(
+      to bottom,
+      $primary-background-color 30.5%,
+      $white-color 19.5%,
+      $white-color 50%
+    );
+  }
+}
+.galleri__img {
+  width: 320px;
+  padding-left: 20px;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  padding-left: 0;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
