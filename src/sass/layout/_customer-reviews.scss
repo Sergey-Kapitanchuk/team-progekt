@@ -20,6 +20,10 @@
     background-color: $background-reviews;
     padding-top: 43px;
     padding-bottom: 19px;
+    max-width: 280px;
+    @media screen and (min-width: 480px) {
+      max-width: 440px;
+    }
     @media screen and (min-width: 768px) {
       margin-bottom: 42px;
       max-width: 620px;
@@ -111,6 +115,9 @@
     #e1e1e1 19px,
     transparent 31px
   );
+  @media screen and (min-width: 480px) {
+    max-width: 230px;
+  }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 2.142;
