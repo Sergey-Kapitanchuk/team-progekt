@@ -12,11 +12,15 @@
             </svg>
           </button>
           <ul class="site-nav">
-            <li class="site-nav__item"><a  href="#" class="site-nav__link">Home</a></li>
-            <li class="site-nav__item"><a  href="#anchor1" class="site-nav__link">About us</a></li>
-            <li class="site-nav__item"><a  href="#anchor2" class="site-nav__link">How it’s made?</a></li>
-            <li class="site-nav__item"><a  href="#anchor3" class="site-nav__link">Our products</a></li>
-            <li class="site-nav__item"><a  href="#anchor4" class="site-nav__link">Contact</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Home</a></li>
+            <li class="site-nav__item"><a href="#anchor1" class="site-nav__link">About us</a></li>
+            <li class="site-nav__item">
+              <a href="#anchor2" class="site-nav__link">How it’s made?</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#anchor3" class="site-nav__link">Our products</a>
+            </li>
+            <li class="site-nav__item"><a href="#anchor4" class="site-nav__link">Contact</a></li>
           </ul>
         </nav>
         <button class="navigation__button js-opacityA" type="button">
@@ -47,7 +51,9 @@
           <a href="#anchor3" class="anchor-list__button">Products</a>
         </li>
         <li class="anchor-list__item">
-          <a href="#anchor2" class="anchor-list__button anchor-list__button--look">How it’s made?</a>
+          <a href="#anchor2" class="anchor-list__button anchor-list__button--look"
+            >How it’s made?</a
+          >
         </li>
       </ul>
       <div class="content-wrapper">
@@ -55,11 +61,16 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <a href="#" class="transition-link">
+        <button type="submit" class="transition-link">
+          <svg width="8" height="8" class="transition-link__icon">
+            <use href="./images/sprite.svg#icon-arrow-riht"></use>
+          </svg>
+        </button>
+        <!-- <a href="#" class="transition-link">
           <svg width="10" height="10" class="transition-link__icon">
             <use href="./images/sprite.svg#icon-arrow-riht"></use>
           </svg>
-        </a>
+        </a> -->
       </div>
     </div>
 
