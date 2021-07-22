@@ -231,7 +231,9 @@
 }
 
 .products_button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: auto;
   margin-left: auto;
   width: 40px;
@@ -242,4 +244,11 @@
   padding: 0;
   cursor: pointer;
   fill: $primaryColor;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background-color: $primaryColor;
+    fill: $white-color;
+    transform: scale(1.1);
+  }
 }
